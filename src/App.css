@@ -40,7 +40,7 @@ body {
     padding: 15px;
   }
   h1 {
-    font-size: 1.8rem !important;  /* Reduce font size to fit on one line */
+    font-size: 2rem !important;  /* Reduce font size to fit on one line */
     white-space: nowrap;  /* Prevent wrapping */
     overflow: hidden;  /* Prevent content from overflowing */
     text-overflow: ellipsis;  /* Add ellipsis (...) if text overflows */
@@ -105,7 +105,7 @@ footer a {
 @media (max-width: 400px) {
   .logo {
     width: 100px;  /* Further reduce size on very small screens */
-    top: 10px;
-    left: 10px;
+    top: 15px;
+    left: 20px;
   }
 }
