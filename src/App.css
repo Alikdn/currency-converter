@@ -36,12 +36,16 @@ body {
 }
 @media (max-width: 600px) {
   .converter {
-    width: 90%;
+    width: 85%;
     padding: 15px;
   }
   h1 {
     font-size: 1.8rem;
-    white-space: nowrap;
+    white-space: normal;
+    word-wrap: break-word;
+    overflow-wrap: break-word;
+    text-align: center;
+    margin: 0 auto;
   }
 }
 
