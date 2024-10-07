@@ -36,16 +36,16 @@ body {
 }
 @media (max-width: 600px) {
   .converter {
-    width: 85%;
+    width: 80%;
     padding: 15px;
   }
   h1 {
-    font-size: 1.8rem;
-    white-space: normal;
-    word-wrap: break-word;
-    overflow-wrap: break-word;
-    text-align: center;
-    margin: 0 auto;
+    font-size: 1.6rem;  /* Reduce font size to fit on one line */
+    white-space: nowrap;  /* Prevent wrapping */
+    overflow: hidden;  /* Prevent content from overflowing */
+    text-overflow: ellipsis;  /* Add ellipsis (...) if text overflows */
+    text-align: center;  /* Keep the text centered */
+    margin: 0 auto;      /* Center the heading */
   }
 }
 
