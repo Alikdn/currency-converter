@@ -15,7 +15,7 @@ function App() {
 
   // Fetch exchange rates
   useEffect(() => {
-    fetch(`https://v6.exchangerate-api.com/v6/70164fa06850c06e4771cf48/latest/${fromCurrency}`)
+    fetch(`https://v6.exchangerate-api.com/v6/70164fa06850c06e4771cf48a/latest/${fromCurrency}`)
       .then(response => response.json())
       .then(data => {
         if (data.result !== 'success') throw new Error('Failed to fetch data');
@@ -24,7 +24,7 @@ function App() {
       })
       .catch(err => {
         console.error(err);
-        setError('Failed to load exchange rates');
+        setError('Failed to load exchange rates. Please try again later');
       });
   }, [fromCurrency, toCurrency]);
   
