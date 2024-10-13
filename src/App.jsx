@@ -15,7 +15,7 @@ function App() {
 
   // Fetch exchange rates
   useEffect(() => {
-    fetch(`https://v6.exchangerate-api.com/v6/70164fa06850c06e4771cf48/latest/${fromCurrency}`)
+    fetch(`https://v6.exchangerate-api.com/v6/70164fa06850c06e4771cf48SS/latest/${fromCurrency}`)
       .then(response => response.json())
       .then(data => {
         if (data.result !== 'success') throw new Error('Failed to fetch data');
